@@ -1,0 +1,52 @@
+const masarEliteResources = {
+    // أولاً: المنصات المشتركة (لكل المراحل والمواد)
+    commonPlatforms: [
+        { name: "منصة عين التعليمية", type: "Official", link: "https://ien.edu.sa", icon: "fas fa-university", description: "المصدر الحكومي المعتمد لكل المناهج السعودية." },
+        { name: "منصة سهل", type: "Platform", link: "https://shl.sa", icon: "fas fa-bolt", description: "النخبة في تبسيط الدروس التعليمية لمقاطع قصيرة." },
+        { name: "نون أكاديمي", type: "App", link: "https://www.noonacademy.com", icon: "fas fa-users", description: "بيئة تعليمية تفاعلية سعودية بامتياز." }
+    ],
+
+    // ثانياً: المصادر المتخصصة (حسب المرحلة والمسار)
+    specialized: {
+        intermediate: {
+            title: "المرحلة المتوسطة",
+            resources: [
+                { subject: "العلوم الشرعية", provider: "عين الشرعية", link: "https://www.youtube.com/@ien_sh", type: "YouTube" },
+                { subject: "الرياضيات والعلوم", provider: "شبكة فاهم", link: "https://www.youtube.com/@FahimNetwork", type: "YouTube" },
+                { subject: "اللغة الإنجليزية", provider: "بلبل الإنجليزية", link: "https://www.youtube.com/@BulbulEnglish", type: "YouTube" }
+            ]
+        },
+        highSchool: {
+            title: "المرحلة الثانوية (المسارات)",
+            // تصنيف حسب المسار لذكاء التوجيه في مشروعك
+            tracks: {
+                general: [
+                    { subject: "الرياضيات", provider: "أ. منال التويجري", link: "https://www.youtube.com/@manal_altwaijri", type: "Expert" },
+                    { subject: "الفيزياء", provider: "أ. ناصر اللحياني", link: "https://www.youtube.com/@n_alluhiyani", type: "Expert" }
+                ],
+                computerAndEngineering: [
+                    { subject: "التقنية الرقمية", provider: "أكاديمية طويق / سطر", link: "https://satr.codes", type: "Specialized" },
+                    { subject: "هندسة وبرمجيات", provider: "منصة كود السعودية", link: "https://saudicodes.sa", type: "Specialized" }
+                ],
+                healthAndLife: [
+                    { subject: "الأحياء والكيمياء", provider: "أ. أحمد نبيل", link: "https://www.youtube.com/@AhmedNabil", type: "Expert" },
+                    { subject: "التحصيلي العلمي", provider: "منصة أضواء / فرح إبراهيم", link: "https://twitter.com/Adwaa_Edu", type: "Social" }
+                ],
+                shariaAndLaw: [
+                    { subject: "العلوم الشرعية واللغة", provider: "سلسلة غيمة التعليمية", link: "https://t.me/Ghaima_edu", type: "Telegram" },
+                    { subject: "التفسير والفقه", provider: "أ. سامي الحمود", link: "https://twitter.com/sami_alhamoud", type: "Expert" }
+                ]
+            }
+        },
+        careerAndUni: {
+            title: "تطوير المهارات والقبول الجامعي",
+            resources: [
+                { subject: "القدرات والكمي", provider: "أ. فهد التميمي", link: "https://twitter.com/Fahad_Math", type: "Legend" },
+                { subject: "التوجيه الجامعي", provider: "مهند الحبيب", link: "https://www.tiktok.com/@m_alhabib", type: "Consultant" }
+            ]
+        }
+    }
+};
+
+// أمر التنفيذ البرمجي (للتصنيف التلقائي في الواجهة)
+console.log("Masar Resources Loaded Successfully 🚀");
